@@ -19,4 +19,4 @@ df2
 lp_1 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(수변부)')
 lp_2 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(주거지)')
 lp_3 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(공원)')
-plt.show()
+plt.show(lp_1,lp_2,lp_3)
