@@ -31,7 +31,7 @@ weather_data = pd.read_csv('./Mini_project_1/weather.csv', encoding='cp949')
 weather_data
 
 #weather_data[['일시', '평균기온(℃)']]
-st.line_chart(data=weather_data, x='일시', y='평균기온(℃)', width = 70)
+st.line_chart(data=weather_data, x='일시', y='평균기온(℃)')
 
 #lp_2 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(주거지)')
 #lp_3 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(공원)')
