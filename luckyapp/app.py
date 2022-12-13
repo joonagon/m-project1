@@ -12,7 +12,7 @@ st.header('여러분의 참여를 환영합니다.')
 columns = st.columns(4)
 for idx, col in enumerate(columns):
     for idx2 in range(4) :
-        col.text_input(f"조 추첨 대상 {idx+1 + idx2+1}", key=idx)
+        col.text_input(f"조 추첨 대상 {idx+1 + idx2 *4}", key=f"{idx+1 + idx2 *4}")
 
 # 13명이 소속 될 조 이름을 넣을 위치
 
