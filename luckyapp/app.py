@@ -22,10 +22,13 @@ for idx, col in enumerate(columns):
 columns2=tabs[1].columns(4)
 for idx, col in enumerate(columns):
     for idx2 in range(4) :
-        col.text_input(f"조 추첨 대상 {idx+1 + idx2 *4}", key="g{idx+1 + idx2 *4}")
+        col.text_input(f"조 목록 {idx+1 + idx2 *4}", key="g{idx+1 + idx2 *4}")
 
 # 13명이 소속 될 조 이름을 넣을 위치
-st.write(st.session_state)
+#st.write(st.session_state)
+ss = pd.Series(st.session_state)
+ss2 = ss[ss.ne("")]
+st.write(ss2)
 
 # 추첨 버튼
 
