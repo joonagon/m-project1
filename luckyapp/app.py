@@ -17,7 +17,7 @@ for idx, col in enumerate(columns):
         col.text_input(f"조 추첨 대상 {idx+1 + idx2 *4}", key=f"{idx+1 + idx2 *4}")
 
 # 13명이 소속 될 조 이름을 넣을 위치
-
+st.write(st.session_state)
 
 # 추첨 버튼
 
