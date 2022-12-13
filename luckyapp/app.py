@@ -7,16 +7,16 @@ import numpy as np
 # base =
 
 # Primary accent color for interactive elements.
-primaryColor = #1ea8e8
+primaryColor = '#1ea8e8'
 
 # Background color for the main content area.
-backgroundColor = #000000
+backgroundColor = '#000000'
 
 # Background color used for the sidebar and most interactive widgets.
 # secondaryBackgroundColor =
 
 # Color used for almost all text.
-textColor = #ffffff
+textColor = '#ffffff'
 
 # Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
 font = "sans serif"
