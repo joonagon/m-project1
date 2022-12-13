@@ -18,8 +18,7 @@ df1 = pd.read_csv('./Mini_project_1/mosdata.csv', encoding='cp949')
 mosq_data = df1[:2517]
 mosq_data
 
-df3 = pd.read_csv('./Mini_project_1/weather.csv', encoding='utf8')
-weather_data=df3.T
+weather_data = pd.read_csv('./Mini_project_1/weather.csv', encoding='utf8')
 weather_data
 
 st.line_chart(data=mosq_data, x='모기지수 발생일',y='모기지수(수변부)')
