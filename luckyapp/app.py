@@ -11,7 +11,7 @@ st.header('여러분의 참여를 환영합니다.')
 # 3x4 형태로 배치
 columns = st.columns(4)
 
-for c in columns:
+for c enumarate(columns):
     st.text_input('조 추첨 대상')
 
 # 13명이 소속 될 조 이름을 넣을 위치
