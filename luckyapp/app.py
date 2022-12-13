@@ -12,7 +12,7 @@ st.header('여러분의 참여를 환영합니다.')
 # 추첨 대상인 13명의 이름을 넣을 위치
 # 3x4 형태로 배치
 
-tabs = st.tabs(['참가자'])
+tabs = st.tabs(['참가자', '조'])
 
 columns = st.columns(4)
 for idx, col in enumerate(columns):
