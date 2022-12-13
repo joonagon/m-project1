@@ -69,4 +69,4 @@ if st.button('추첨 시작!'):
     #st.write(g_rd)
 
 # 13개의 짝을 지어서 표시해줄 그래픽
-df = pd.DataFrame({"추췀 대상자 이름" : n_rd, "조 이름":g_rd})
+df = pd.DataFrame({"추첨 대상자 이름":n_rd, "조 이름":g_rd})
