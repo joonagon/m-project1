@@ -23,8 +23,7 @@ mosq_data
 st.line_chart(data=mosq_data, x='모기지수 발생일', 
                               y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'])
 
-
-
+# 날씨 자료 링크(기상청) https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do
 
 weather_data = pd.read_csv('./Mini_project_1/weather.csv', encoding='cp949')
 
