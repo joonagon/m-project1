@@ -26,7 +26,7 @@ st.line_chart(data=mosq_data, x='모기지수 발생일',y='모기지수(공원)
 
 
 weather_data = pd.read_csv('./Mini_project_1/weather.csv', encoding='cp949')
-st.dataframe(df.style.format(subset=['평균기온(℃)'], formatter="{:.2f}"
+
 weather_data
 
 #weather_data[['일시', '평균기온(℃)']]
