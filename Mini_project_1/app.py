@@ -9,7 +9,7 @@ st.header("모기예보제와 일자별 날씨 데이터를 통한, 모기 발�
 
 
 st.image("https://news.seoul.go.kr/welfare/files/2020/02/62cfc9f3f36041.41905113-1086x1536.jpg")
-st.write("http://data.seoul.go.kr/dataList/OA-13285/S/1/datasetView.do#", fontcolor = '#CECECE')
+st.write("http://data.seoul.go.kr/dataList/OA-13285/S/1/datasetView.do#", fontcolor = '#CECECE',fontsize = 14)
 
 
 # UTF-8 / CP-949
