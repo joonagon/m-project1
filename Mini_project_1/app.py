@@ -23,7 +23,7 @@ st.line_chart(data=mosq_data, x='모기지수 발생일',y='모기지수(주거�
 st.line_chart(data=mosq_data, x='모기지수 발생일',y='모기지수(공원)')
 
 
-weather_data = pd.read_csv('./Mini_project_1/weather.csv', encoding='utf8')
+weather_data = pd.read_csv('./Mini_project_1/weather.csv', encoding='cp949')
 weather_data
 
 
