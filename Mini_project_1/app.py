@@ -16,8 +16,6 @@ df1 = pd.read_csv('./Mini_project_1/mosdata.csv', encoding='cp949')
 df2 = df1[:2517]
 df2
 
-plt.figure(figsize=(80, 10))
-
 lp_1 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(수변부)')
 lp_2 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(주거지)')
 lp_3 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(공원)')
