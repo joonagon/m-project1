@@ -7,7 +7,7 @@ import seaborn as sns
 st.write(
     
     # 탐색적 데이터 분석(Exploratory Data Analysis)과 그래프
-    >EDA
+    > EDA
     * 그래프, 통계 수치등을 활용해서 데이터를 파악하는 과정
     * 탐색적 데이터 분석 단계에서는 다양한 그래프가 나옴
     * 그래프는 데이터를 한눈에 파악하는데 도움을 줌(경향성 파악)
