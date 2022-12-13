@@ -13,5 +13,5 @@ st.write(
 # https://unsplash.com
 # https://pixabay.com/ko
 st.image(
-    "https://images.unsplash.com/photo-1670873033664-023b830d17d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+    "https://unsplash.com/photos/CF0kqulCr24"
 )
