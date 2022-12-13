@@ -1,7 +1,7 @@
 # streamlit 라이브러리 호출
 import streamlit as st
 import numpy as np
-[theme]
+
 
 # The preset Streamlit theme that your custom theme inherits from. One of "light" or "dark".
 # base =
