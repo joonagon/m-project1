@@ -25,7 +25,7 @@ st.line_chart(data=mosq_data, x='모기지수 발생일',y='모기지수(공원)
 
 weather_data = pd.read_csv('./Mini_project_1/weather.csv', encoding='cp949')
 tempr=weather_data[:84]
-tempr
+tempr[['일시', '평균기온(℃)']]
 
 
 #lp_2 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(주거지)')
