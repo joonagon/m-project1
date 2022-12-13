@@ -10,3 +10,5 @@ st.write("http://data.seoul.go.kr/dataList/OA-13285/S/1/datasetView.do#")
 # https://seong6496.tistory.com/269
 df = pd.read_csv('./Mini_project_1/mosdata.csv', encoding='cp949')
 st.write(df)
+
+df.describe()
