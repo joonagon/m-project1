@@ -21,7 +21,7 @@ df2
 df3 = pd.read_csv('./Mini_project_1/WeatherData.csv', encoding='cp949')
 df3
 
-lp_1 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(수변부)')
+#lp_1 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(수변부)')
 #lp_2 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(주거지)')
 #lp_3 = sns.lineplot(data=df2, x='모기지수 발생일',y='모기지수(공원)')
-plt.show()
+#plt.show()
