@@ -5,7 +5,7 @@ import matplotlib as plt
 import seaborn as sns
 
 st.write(
-    ````
+    ```
     # 탐색적 데이터 분석(Exploratory Data Analysis)과 그래프
     >**EDA**
     * 그래프, 통계 수치등을 활용해서 데이터를 파악하는 과정
