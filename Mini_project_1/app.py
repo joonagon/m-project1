@@ -27,7 +27,7 @@ with tab2:
 
     # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
     st.line_chart(data=mosq_data, x='모기지수 발생일', 
-                                y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'])
+                                  y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'])
 
 
 with tab3:
@@ -43,4 +43,5 @@ with tab3:
         st.dataframe(data=weather_data)
 
 
-    st.line_chart(data=weather_data, x='일시')
+    st.line_chart(data=weather_data2, x='일시',
+                                      y=['평균기온(℃)','최고기온(℃)','최저기온(℃)'])
