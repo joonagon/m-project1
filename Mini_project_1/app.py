@@ -10,8 +10,8 @@ st.header("서울시 기온에 따른 모기 발생 빈도 변화")
 tab1, tab2, tab3 = st.tabs(['메인', '모기지수 그래프', '서울시 기온변화'])
 
 with tab1:
-    st.image("https://news.seoul.go.kr/welfare/files/2020/02/62cfc9f3f36041.41905113-1086x1536.jpg")
-    st.write("http://data.seoul.go.kr/dataList/OA-13285/S/1/datasetView.do#")
+    st.image("https://news.seoul.go.kr/welfare/files/2020/02/62cfc9f3f36041.41905113-1086x1536.jpg",
+    caption = "http://data.seoul.go.kr/dataList/OA-13285/S/1/datasetView.do#")
 
 with tab2:
     st.subheader('모기 개체수에 비례한 모기지수 그래프')
