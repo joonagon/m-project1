@@ -43,4 +43,4 @@ with tab3:
         st.dataframe(data=weather_data)
 
 
-    st.line_chart(data=weather_data, x='일시', y='평균기온(℃)')
+    st.line_chart(data=weather_data, x='일시')
