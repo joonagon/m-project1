@@ -49,6 +49,11 @@ with tab2:
                                   x='모기지수 발생일',
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
                                   )
+    st.subheader('날짜별 모기지수 보기') # 일부만 입력해도 출력되도록 고쳐야됨
+    title = st.text_input('원하는 날짜를 입력하세요!')
+    if title:
+        mosfx_data = mosq_data.loc[(mosq_data['모기지수 발생일'] == title +'T00:00:00')]
+        st.write(mosfx_data)
 
 
 with tab3:
