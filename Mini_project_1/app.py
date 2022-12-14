@@ -11,15 +11,12 @@ st.header("서울시 기온에 따른 모기 발생 빈도 변화")
 tab1, tab2, tab3 = st.tabs(['메인', '모기지수 그래프', '서울시 기온변화'])
 
 with tab1:
-    st.set_page_config()
-    con1, con2 = st.columns([0.5,0.5])
-    with con1:
-        st.markdown("최근 몇 년새 모기가 여름이 아닌 때에도 보이는 경우가 자주 있습니다.")
-        st.markdown("모기지수와 기온변화 그래프를 통해 모기가 주로 발생하는 시기의 변화를 파악하고자 합니다.")
-    with con2:
-        st.image("https://news.seoul.go.kr/welfare/files/2020/02/62cfc9f3f36041.41905113-1086x1536.jpg",
-        caption = "<서울시 모기예보제>, 출처 : http://data.seoul.go.kr/dataList/OA-13285/S/1/datasetView.do#",
-        width = 360)
+    st.markdown("최근 몇 년새 모기가 여름이 아닌 때에도 보이는 경우가 자주 있습니다.")
+    st.markdown("모기지수와 기온변화 그래프를 통해 모기가 주로 발생하는 시기의 변화를 파악하고자 합니다.")
+
+    st.image("https://news.seoul.go.kr/welfare/files/2020/02/62cfc9f3f36041.41905113-1086x1536.jpg",
+    caption = "<서울시 모기예보제>, 출처 : http://data.seoul.go.kr/dataList/OA-13285/S/1/datasetView.do#",
+    width = 360)
 
 with tab2:
     st.subheader('모기 개체수에 비례한 모기지수 그래프')
