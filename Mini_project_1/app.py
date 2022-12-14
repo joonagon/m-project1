@@ -1,3 +1,4 @@
+import altair as alt
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -21,7 +22,7 @@ with tab2:
     mosq_data = df1[:2517]
     mosq_data['모기지수 발생일'] = pd.to_datetime(mosq_data['모기지수 발생일'])
 
-    
+
     st.markdown("")
     see_data = st.expander('서울시 모기지수 데이터 상세보기')
     with see_data:
