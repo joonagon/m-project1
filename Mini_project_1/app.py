@@ -30,4 +30,5 @@ weather_data = pd.read_csv('./Mini_project_1/extremum_20221214093542.csv', encod
 weather_data2 = weather_data[['일시', '평균기온(℃)','최고기온(℃)','최저기온(℃)']]
 weather_data2
 
-st.line_chart(data=weather_data, x='일시', y='평균기온(℃)')
+st.line_chart[(data=weather_data, x='일시', y='평균기온(℃)'),(data=mosq_data, x='모기지수 발생일', 
+                              y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'])]
