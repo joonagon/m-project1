@@ -25,7 +25,7 @@ with tab2:
     st.markdown("")
     see_data = st.expander('서울시 모기지수 데이터 상세보기')
     with see_data:
-        st.dataframe(data=df1)
+        st.dataframe(data=mosq_data)
 
     # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
     st.line_chart(data=mosq_data, x='모기지수 발생일', 
