@@ -28,11 +28,16 @@ with tab2:
     with see_data:
         st.dataframe(data=mosq_data)
 
+    add_vertical_space()
+
     # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
     st.line_chart(data=mosq_data2,                                
                                   x='모기지수 발생일',
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
                                   )
+    
+    add_vertical_space()
+    
     st.line_chart(data=mosq_data1,                                  
                                   x='모기지수 발생일',
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
