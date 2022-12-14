@@ -4,8 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.title("서울시의 모기 방역")
-st.header("서울시의 모기 방역 이전과 이후")
+st.title("서울시의 모기")
+st.header("서울시 기온에 따른 모기 발생 빈도 변화")
 
 
 st.image("https://news.seoul.go.kr/welfare/files/2020/02/62cfc9f3f36041.41905113-1086x1536.jpg")
