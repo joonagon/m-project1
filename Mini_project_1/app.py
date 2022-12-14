@@ -26,7 +26,7 @@ st.line_chart(data=mosq_data, x='모기지수 발생일',
 # 날씨 자료 링크(기상청) https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do
 st.subheader('2016년 5월부터의 서울시 기온변화')
 
-weather_data = pd.read_csv('./Mini_project_1/extremum_20221214093542.csv', encoding='cp949')
+weather_data = pd.read_csv('./Mini_project_1/extremum_20221214093542.csv', encoding='cp949', skiprows=10)
 weather_data2 = weather_data[['일시', '평균기온(℃)','최고기온(℃)','최저기온(℃)']] 
 weather_data2
 
