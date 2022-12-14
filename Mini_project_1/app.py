@@ -19,6 +19,11 @@ df1 = pd.read_csv('./Mini_project_1/mosdata.csv', encoding='cp949')
 mosq_data = df1[:2517]
 mosq_data
 
+st.markdown("")
+    see_data = st.expander('데이터 시트 상세보기')
+    with see_data:
+        st.dataframe(data=mosq_data.reset_index(drop=True))
+
 # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
 st.line_chart(data=mosq_data, x='모기지수 발생일', 
                               y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'])
