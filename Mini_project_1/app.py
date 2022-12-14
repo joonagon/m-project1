@@ -28,9 +28,6 @@ st.line_chart(data=mosq_data, x='모기지수 발생일',
                               y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'])
 
 
-<br>
-<br>
-
 
 # 날씨 자료 링크(기상청) https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do
 st.subheader('서울시 기온변화 (2016 ~ )')
