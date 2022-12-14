@@ -37,15 +37,15 @@ with tab2:
     
     st.markdown("")
     
-    st.line_chart(data=mosq_data2,                                
+    st.line_chart(data=mosq_data,                                
+                                  x='모기지수 발생일',
+                                  y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
+                                  )
+    st.line_chart(data=mosq_data2,                                  
                                   x='모기지수 발생일',
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
                                   )
     st.line_chart(data=mosq_data1,                                  
-                                  x='모기지수 발생일',
-                                  y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
-                                  )
-    st.line_chart(data=mosq_data,                                  
                                   x='모기지수 발생일',
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
                                   )
