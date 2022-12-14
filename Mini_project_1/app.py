@@ -22,7 +22,7 @@ mosq_data
 st.markdown("")
     see_data = st.expander('데이터 시트 상세보기')
     with see_data:
-        st.dataframe(data=mosq_data.reset_index(drop=True))
+        st.dataframe(data=mosq_data)
 
 # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
 st.line_chart(data=mosq_data, x='모기지수 발생일', 
