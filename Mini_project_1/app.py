@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.graph_objs as go
 
 st.title("서울시의 모기")
 st.header("서울시 기온에 따른 모기 발생 빈도 변화")
