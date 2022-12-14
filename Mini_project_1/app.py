@@ -17,12 +17,13 @@ st.subheader('모기 개체수에 비례한 "모기 지수" 데이터')
 # https://seong6496.tistory.com/269
 df1 = pd.read_csv('./Mini_project_1/mosdata.csv', encoding='cp949')
 mosq_data = df1[:2517]
-mosq_data
 
 st.markdown("")
 see_data = st.expander('데이터 시트 상세보기')
 with see_data:
     st.dataframe(data=mosq_data)
+
+
 
 # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
 st.line_chart(data=mosq_data, x='모기지수 발생일', 
@@ -33,6 +34,11 @@ st.subheader('2016년 5월부터의 서울시 기온변화')
 
 weather_data = pd.read_csv('./Mini_project_1/extremum_20221214093542.csv', encoding='cp949', skiprows=10)
 weather_data2 = weather_data[['일시', '평균기온(℃)','최고기온(℃)','최저기온(℃)']]
-weather_data2
+
+st.markdown("")
+see_data = st.expander('2016년부터 현재까지 서울시 기온 상세보기')
+with see_data:
+    st.dataframe(data=weather_data)
+
 
 st.line_chart(data=weather_data, x='일시', y='평균기온(℃)')
