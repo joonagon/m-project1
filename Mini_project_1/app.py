@@ -37,7 +37,7 @@ with tab2:
                                   )
     
     add_vertical_space()
-    
+
     st.line_chart(data=mosq_data1,                                  
                                   x='모기지수 발생일',
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
@@ -56,6 +56,7 @@ with tab3:
     with see_data:
         st.dataframe(data=weather_data)
 
+    add_vertical_space()
 
     st.line_chart(data=weather_data2, x='일시',
                                       y=['평균기온(℃)','최고기온(℃)','최저기온(℃)'])
