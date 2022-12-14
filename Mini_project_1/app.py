@@ -20,7 +20,8 @@ with tab2:
     df1 = pd.read_csv('./Mini_project_1/mosdata.csv', encoding='cp949')
     mosq_data = df1[:2517]
     mosq_data['모기지수 발생일'] = pd.to_datetime(mosq_data['모기지수 발생일'])
-
+    mosq_data1 = mosq_data[:1141]
+    mosq_data2 = mosq_data[1143:2517]
 
     st.markdown("")
     see_data = st.expander('서울시 모기지수 데이터 상세보기')
@@ -28,10 +29,11 @@ with tab2:
         st.dataframe(data=mosq_data)
 
     # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
-    st.line_chart(data=mosq_data, x='모기지수 발생일', 
+    st.line_chart(data=mosq_data2, x='모기지수 발생일', 
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
-                                  width = 1920,
-                                  height = 540,
+                                  )
+    st.line_chart(data=mosq_data1, x='모기지수 발생일', 
+                                  y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
                                   )
 
 
