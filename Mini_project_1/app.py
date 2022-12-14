@@ -24,13 +24,14 @@ with tab2:
     mosq_data['모기지수 발생일'] = pd.to_datetime(mosq_data['모기지수 발생일'])
     mosq_data1 = mosq_data[:1141]
     mosq_data2 = mosq_data[1143:2517]
-
-    st.markdown("")
+    st.markdown("서울시는 모기 개체수를 2016년 5월부터 관측해왔습니다.")
+    st.markdown("그리고 2020년 2월 17일부터는 모기가 발생하는 장소를 물가, 주거지, 공원 세 분류의 장소로 나누어 세분화 시켰습니다.")
     see_data = st.expander('서울시 모기지수 데이터 상세보기')
     with see_data:
         st.dataframe(data=mosq_data)
-
-    # st.line_chart(data=None, x=None, y=None, width=0, height=0, use_container_width=True
+    
+    st.markdown("")
+    
     st.line_chart(data=mosq_data2,                                
                                   x='모기지수 발생일',
                                   y=['모기지수(수변부)','모기지수(주거지)','모기지수(공원)'],
