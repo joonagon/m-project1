@@ -19,7 +19,7 @@ df1 = pd.read_csv('./Mini_project_1/mosdata.csv', encoding='cp949')
 mosq_data = df1[:2517]
 
 st.markdown("")
-see_data = st.expander('서울시 모기지수 데이터')
+see_data = st.expander('서울시 모기지수 데이터 상세보기')
 with see_data:
     st.dataframe(data=mosq_data)
 
@@ -32,13 +32,13 @@ st.line_chart(data=mosq_data, x='모기지수 발생일',
 
 
 # 날씨 자료 링크(기상청) https://data.kma.go.kr/climate/RankState/selectRankStatisticsDivisionList.do
-st.subheader('2016년 5월부터의 서울시 기온변화')
+st.subheader('서울시 기온변화 (2016 ~ )')
 
 weather_data = pd.read_csv('./Mini_project_1/extremum_20221214093542.csv', encoding='cp949', skiprows=10)
 weather_data2 = weather_data[['일시', '평균기온(℃)','최고기온(℃)','최저기온(℃)']]
 
 st.markdown("")
-see_data = st.expander('서울시 기온변화 상세보기(2016 ~ 2022)')
+see_data = st.expander('서울시 기온변화 상세보기(2016 ~ )')
 with see_data:
     st.dataframe(data=weather_data)
 
