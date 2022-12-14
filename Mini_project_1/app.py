@@ -27,7 +27,7 @@ st.line_chart(data=mosq_data, x='모기지수 발생일',
 st.subheader('2016년 5월부터의 서울시 기온변화')
 
 weather_data = pd.read_csv('./Mini_project_1/extremum_20221214093542.csv', encoding='cp949', skiprows=10)
-weather_data2 = round(weather_data[['일시', '평균기온(℃)','최고기온(℃)','최저기온(℃)']] ,2)
+weather_data2 = weather_data[['일시', '평균기온(℃)','최고기온(℃)','최저기온(℃)']]
 weather_data2
 
 st.line_chart(data=weather_data, x='일시', y='평균기온(℃)')
