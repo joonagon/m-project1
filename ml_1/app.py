@@ -38,6 +38,7 @@ st.radio(
 )
 st.wirte(st.session_state['sex'])
 
+
 # bmi : 실수형'
 st.number_input(
     label = 'BMI',
