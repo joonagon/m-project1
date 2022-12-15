@@ -31,9 +31,9 @@ st.number_input(
 
 # sex : 성별
 st.radio(
-    label='성별'
+    label='성별',
     options=['남성', '여성'],
-    index=0
+    index=0,
     key='sex'
 )
 st.wirte(st.session_state['sex'])
