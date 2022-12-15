@@ -36,7 +36,7 @@ st.radio(
     index=0,
     key='sex'
 )
-st.wirte(st.session_state['sex'])
+#st.wirte(st.session_state['sex'])
 
 
 # bmi : 실수형'
@@ -46,7 +46,7 @@ st.number_input(
     value=25.0,
     key='bmi'
 )
-st.wirte(st.session_state['bmi'])
+#st.wirte(st.session_state['bmi'])
 
 
 # children : 자녀수
@@ -56,4 +56,13 @@ st.number_input(
     value=1,
     key='children'
 )
-st.wirte(st.session_state['children'])
+# st.wirte(st.session_state['children'])
+
+
+# smoker : 흡연여부
+st.checkbox(
+    label='흡연여부',
+    value=False
+    key='sex'
+)
+st.wirte(st.session_state['smoker'])
