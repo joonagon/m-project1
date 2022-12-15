@@ -37,3 +37,12 @@ st.radio(
     key='sex'
 )
 st.wirte(st.session_state['sex'])
+
+# bmi : 실수형'
+st.number_input(
+    label = 'BMI',
+    step=0.1,  ## 실수형으로 값을 받을수 있도록
+    value=25,
+    key='bmi'
+)
+st.wirte(st.session_state['bmi'])
