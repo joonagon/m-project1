@@ -26,7 +26,7 @@ st.number_input(
     key='age'
 )
 #st.session_state['age']
-#st.wirte(st.session_state['age'])
+#st.write(st.session_state['age'])
 
 
 # sex : 성별
@@ -36,7 +36,7 @@ st.radio(
     index=0,
     key='sex'
 )
-#st.wirte(st.session_state['sex'])
+#st.write(st.session_state['sex'])
 
 
 # bmi : 실수형'
@@ -46,7 +46,7 @@ st.number_input(
     value=25.0,
     key='bmi'
 )
-#st.wirte(st.session_state['bmi'])
+#st.write(st.session_state['bmi'])
 
 
 # children : 자녀수
@@ -56,7 +56,7 @@ st.number_input(
     value=1,
     key='children'
 )
-# st.wirte(st.session_state['children'])
+# st.write(st.session_state['children'])
 
 
 # smoker : 흡연여부
@@ -65,4 +65,14 @@ st.checkbox(
     value=False
     key='sex'
 )
-st.wirte(st.session_state['smoker'])
+#st.wirte(st.session_state['smoker'])
+
+
+# region : 지역
+st.selectbox(
+    label="지역",
+    options=["북동", "북서", "남동", "남서"],
+    index=2,
+    key='region'
+)
+st.write(st.session_state['region'])
