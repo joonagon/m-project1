@@ -43,7 +43,7 @@ st.wirte(st.session_state['sex'])
 st.number_input(
     label = 'BMI',
     step=0.1,  ## 실수형으로 값을 받을수 있도록
-    value=25,
+    value=25.0,
     key='bmi'
 )
 st.wirte(st.session_state['bmi'])
