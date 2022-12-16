@@ -34,6 +34,10 @@ def pre_processing(df):
   ## 4.범주형 변수는 pd.get_dummies 로 해결
   return pd.get_dummies(df, columns=['Sex','Embarked'],drop_first=True)
 
+dttsrv = pre_processing(ttsrv)
+
+
+#훈련셋, 시험셋
 from sklearn.model_selection import train_test_split
 
 X = dttsrv.drop('Survived', axis=1)
@@ -41,6 +45,8 @@ y = dttsrv['Survived']
 
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=16)
 
+
+#모델링
 from sklearn.linear_model import LogisticRegression
 
 model = LogisticRegression()
@@ -50,6 +56,7 @@ model.fit(X_train, y_train)
 pred = model.predict(X_test)
 pred_proba = model.predict_proba(X_test)
 
+#평가
 LrSrv = pd.Series(model.coef_[0], index = X.columns)
 st.wirte(LrSrv)
 
