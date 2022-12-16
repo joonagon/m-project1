@@ -38,25 +38,26 @@ def pre_processing(df):
 #전처리 실행
 dttsrv = pre_processing(ttsrv)
 
+pred = pd.read_csv("./ml_2/submission.csv")
 
 #훈련셋, 시험셋
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 
-X = dttsrv.drop('Survived', axis=1)
-y = dttsrv['Survived']
+#X = dttsrv.drop('Survived', axis=1)
+#y = dttsrv['Survived']
 
-X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=16)
+#X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=16)
 
 
 #모델링
-from sklearn.linear_model import LogisticRegression
+#from sklearn.linear_model import LogisticRegression
 
-model = LogisticRegression()
+#model = LogisticRegression()
 
-model.fit(X_train, y_train)
+#model.fit(X_train, y_train)
 
-pred = model.predict(X_test)
-pred_proba = model.predict_proba(X_test)
+#pred = model.predict(X_test)
+#pred_proba = model.predict_proba(X_test)
 
 #평가
 LrSrv = pd.Series(model.coef_[0], index = X.columns)
@@ -64,5 +65,5 @@ LrSrv = pd.Series(model.coef_[0], index = X.columns)
 
 #표로 보여주기
 st.write("## 로지스틱 회귀 모델")
-st.wirte(LrSrv)
+#st.wirte(LrSrv)
 
