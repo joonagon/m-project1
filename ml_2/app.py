@@ -9,7 +9,7 @@ st.title("머신러닝 2 - 로지스틱 회귀")
 st.header('타이타닉 자료 기반 생존확률 예측')
 ttsrv = pd.read_csv("https://raw.githubusercontent.com/bigdata-young/ai_26th/main/data/titanic_test.csv", 
                    index_col = "PassengerId")
-st.write(dttsrv)
+st.write(ttsrv)
 
 def pre_processing(df):
   
