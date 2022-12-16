@@ -86,4 +86,6 @@ if st.button('예측'):
     ]]
     pred = model.predict(input_values)
     # st.write(pred[0])
-    st.metric(label='예측값', value=pred[0])
+    st.metric(label='예측값', value=pred[0]) 
+    
+    # input_values는 행 하나 이므로 0번째 요소 밖에 없음 따라서 value=pred[0]
