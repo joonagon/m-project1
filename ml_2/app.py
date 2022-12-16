@@ -11,6 +11,7 @@ ttsrv = pd.read_csv("https://raw.githubusercontent.com/bigdata-young/ai_26th/mai
                    index_col = "PassengerId")
 st.write(ttsrv)
 
+# 전처리 함수 설정
 def pre_processing(df):
   
   ## 1,2,3,4 하고 info를 해보면 Fare 결측치가 하나 남음, 이걸처리함
@@ -34,6 +35,7 @@ def pre_processing(df):
   ## 4.범주형 변수는 pd.get_dummies 로 해결
   return pd.get_dummies(df, columns=['Sex','Embarked'],drop_first=True)
 
+#전처리 실행
 dttsrv = pre_processing(ttsrv)
 
 
@@ -58,7 +60,9 @@ pred_proba = model.predict_proba(X_test)
 
 #평가
 LrSrv = pd.Series(model.coef_[0], index = X.columns)
-st.wirte(LrSrv)
 
+
+#표로 보여주기
 st.write("## 로지스틱 회귀 모델")
+st.wirte(LrSrv)
 
